@@ -1,0 +1,13 @@
+[user]
+  name = Jonas Heineson
+  email = heineson@gmail.com
+
+[core]
+  editor = vim
+
+[merge]
+  tool = kdiff3
+
+[alias]
+  tree = log --oneline --decorate --all --graph
+
