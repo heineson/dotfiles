@@ -1,0 +1,8 @@
+#!/bin/bash
+
+VISUAL=vim; export VISUAL
+EDITOR=vim; export EDITOR
+
+#[ -f ~/bin/git-prompt.sh ] && . ~/bin/git-prompt.sh
+PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\[\e[0;94m\]\w$(__git_ps1 " \[\e[0;95m\](%s)")\[\e[0;92m\]\$ \[\e[0m\]'
+
