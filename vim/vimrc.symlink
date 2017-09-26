@@ -1,0 +1,18 @@
+"Tabs
+set tabstop=4
+set softtabstop=4
+set expandtab
+set shiftwidth=4
+
+"UI
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
+syntax on
+set number
+set wildmenu wildmode=full
+set showmatch
+
+"Search
+set hlsearch
+
