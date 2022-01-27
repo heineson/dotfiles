@@ -7,3 +7,7 @@
   * Create SSH keys, add to Github account
   * Clone this repo and install
   * Install sdkman
+    * Java, Maven
+  * Install Jetbrains toolbox -> Intellij
+  * Install Docker (https://docs.docker.com/engine/install/ubuntu/), docker-compose
+
