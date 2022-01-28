@@ -8,10 +8,12 @@ grep -q -F "source $BASHRC_PATH" $HOME/.bashrc || echo "source $BASHRC_PATH" >> 
 
 linkables=$( ls -1 -d **/*.symlink )
 for file in $linkables ; do
+    source="$DOTFILES/$file"
     target="$HOME/.$( basename $file ".symlink" )"
-    echo "Creating symlink for $file"
-    ln -s $DOTFILES/$file $target
+    echo "Creating symlink: $target -> $source"
+    ln -s $source $target
 done
 
+echo "Install configures plugins in vim with ':PlugInstall'"
 echo "Done"
 
