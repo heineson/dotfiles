@@ -10,4 +10,5 @@
     * Java, Maven
   * Install Jetbrains toolbox -> Intellij
   * Install Docker (https://docs.docker.com/engine/install/ubuntu/), docker-compose
+  * NVM (https://github.com/nvm-sh/nvm)
 
