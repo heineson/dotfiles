@@ -2,4 +2,4 @@
 
 alias lla='ls -la'
 alias mci='mvn clean install'
-
+alias mcv='mvn clean verify'
