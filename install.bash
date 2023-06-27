@@ -10,9 +10,22 @@ linkables=$( ls -1 -d **/*.symlink )
 for file in $linkables ; do
     source="$DOTFILES/$file"
     target="$HOME/.$( basename $file ".symlink" )"
-    echo "Creating symlink: $target -> $source"
-    ln -s $source $target
+    if [ -e $target ] ; then
+        echo "$target already linked"
+    else
+        echo "Creating symlink: $target -> $source"
+        ln -s $source $target
+    fi
 done
+
+echo "Install Starship config"
+SS_SOURCE="$DOTFILES/starship/starship.toml"
+SS_DEST="$HOME/.config/starship.toml"
+if [ -e $SS_DEST ] ; then
+    echo "Already installed"
+else
+    ln -s $SS_SOURCE $SS_TARGET
+fi
 
 echo "Install configures plugins in vim with ':PlugInstall'"
 echo "Done"

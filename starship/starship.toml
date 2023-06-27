@@ -1,0 +1,16 @@
+[aws]
+disabled = true
+
+[directory]
+truncation_length = 8
+truncation_symbol = '…/'
+
+[cmd_duration]
+disabled = true
+
+[java]
+symbol = " "
+
+[package]
+disabled = true
+
