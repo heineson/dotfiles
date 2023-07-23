@@ -24,7 +24,7 @@ SS_DEST="$HOME/.config/starship.toml"
 if [ -e $SS_DEST ] ; then
     echo "Already installed"
 else
-    ln -s $SS_SOURCE $SS_TARGET
+    ln -s $SS_SOURCE $SS_DEST
 fi
 
 echo "Install configures plugins in vim with ':PlugInstall'"
