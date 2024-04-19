@@ -27,6 +27,7 @@ else
     ln -s $SS_SOURCE $SS_DEST
 fi
 
-echo "Install configures plugins in vim with ':PlugInstall'"
+echo "- Install configures plugins in vim with ':PlugInstall'"
+echo "- Check ./scripts and run the useful ones"
 echo "Done"
 
