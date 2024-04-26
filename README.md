@@ -2,11 +2,11 @@
 
 ### Setup new Linux laptop
 
-  * `sudo apt install terminator vim gvim wget curl git kdiff3`
+  * `sudo apt install terminator vim vim-gtk3 wget curl git kdiff3`
   * Firefox plugins (Multi-Account containers, password manager, Facebook container, Duck Duck Go Privacy Essentials, Vimium, Consent-O-Matic)
   * Create SSH keys, add to Github account
   * Clone this repo and install
-  * Install starship.rs
+  * Install starship.rs (scripts/starship.sh)
   * Install sdkman
     * Java, Maven
   * Install Jetbrains toolbox -> Intellij
