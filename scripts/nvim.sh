@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash -e
 
 echo "Installing latest nvim appimage"
 
@@ -9,5 +9,6 @@ chmod u+x nvim.appimage
 sudo mkdir -p /opt/nvim
 sudo mv nvim.appimage /opt/nvim/nvim
 
-ln -s /opt/nvim/nvim ~/.local/bin/nvim
+mkdir -p ~/bin
+ln -s /opt/nvim/nvim ~/bin/nvim
 
