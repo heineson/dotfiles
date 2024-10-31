@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash -e
 
 # Install NerdFonts for Ubuntu
 mkdir -p ~/dev
@@ -7,6 +7,7 @@ git clone --filter=blob:none --sparse git@github.com:ryanoasis/nerd-fonts
 cd nerd-fonts
 git sparse-checkout add patched-fonts/UbuntuMono
 ./install.sh UbuntuMono
+sudo fc-cache -fv
 
 # Install starship
 curl -sS https://starship.rs/install.sh | sh
