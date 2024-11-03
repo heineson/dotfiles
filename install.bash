@@ -25,6 +25,7 @@ if [ -e $SS_DEST ] ; then
     echo "Already installed"
 else
     ln -s $SS_SOURCE $SS_DEST
+    echo "Install Starship with ./scripts/starship.sh"
 fi
 
 echo "- Install configured plugins in vim with ':PlugInstall'"
