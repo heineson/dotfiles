@@ -25,9 +25,3 @@ else
   git pull
 fi
 
-if [ ! -e "$HOME/.deno/bin/deno" ]; then
-  curl -fsSL https://deno.land/install.sh | sh
-else 
-  echo "Deno already installed"
-fi
-
