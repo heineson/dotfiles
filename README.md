@@ -17,4 +17,4 @@
 Optional:
 
   * Lazygit (scripts/lazygit.sh)
-
+  * Add Youbikey support for login: https://support.yubico.com/hc/en-us/articles/360018695819-Ubuntu-Linux-20-Login-Guide-Challenge-Response
